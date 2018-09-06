@@ -1,0 +1,48 @@
+---
+templates:
+
+  # Demo template 1
+  demo: &demo_template
+    buttons:
+      0:  # A
+        type: "key"
+        value: "ctrl+shift+z"
+      1:  # B
+        type: "key"
+        value: "slash"
+      3:  # X
+        type: "key"
+        value: "semicolon"
+      4:  # Y
+        type: "key"
+        value: "ctrl+z"
+      6:  # L
+        type: "key"
+        value: "Super+Tab"
+      7:  # R
+        type: "key"
+        value: "Super+c"
+      10:  # Select
+        type: "command"
+        value: ["/home/jsh/dotfiles/scripts/toggle_flip_screen.sh"]
+      11:  # Start
+        type: "key"
+        value: "S"
+    axis:
+      0:
+        min:  # Left
+          type: "key"
+          value: "Super+shift+o"
+        max:  # Right
+          type: "key"
+          value: "Super+z"
+      1:
+        min:  # Up
+          type: "key"
+          value: "Escape"
+        max:  # Down
+          type: "key"
+          value: "Super+u"
+    
+configurations:
+    global: *demo_template
